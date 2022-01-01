@@ -135,6 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/xiaomi/toco/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
     vendor/xiaomi/toco/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/camera/com.qti.sensor.toco_gc02m1_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.toco_gc02m1_macro.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/camera/com.qti.sensor.toco_imx686_wide.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.toco_imx686_wide.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/camera/com.qti.sensor.toco_ov16a10_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.toco_ov16a10_front.so \
