@@ -6,6 +6,13 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/toco
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/toco/proprietary/system/lib64/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.camera.common@1.0.so \
+    vendor/xiaomi/toco/proprietary/system/lib64/libarcsoft_single_chart_calibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_single_chart_calibration.so \
+    vendor/xiaomi/toco/proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_algoup_jni.xiaomi.so \
+    vendor/xiaomi/toco/proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_mianode_jni.xiaomi.so \
+    vendor/xiaomi/toco/proprietary/system/lib64/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcameraservice.so \
+    vendor/xiaomi/toco/proprietary/system/lib64/libdoc_photo.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdoc_photo.so \
+    vendor/xiaomi/toco/proprietary/system/lib64/libdoc_photo_c++_shared.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdoc_photo_c++_shared.so \
     vendor/xiaomi/toco/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/toco/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/toco/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -29,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/CFR_para_W_src2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W_src2.bin \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/LDC_FPC_TUNING_DATA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_FPC_TUNING_DATA.bin \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin \
+    vendor/xiaomi/toco/proprietary/vendor/etc/camera/Miui-Light.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Miui-Light.ttf \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/almalence_sr_params_tele.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/almalence_sr_params_tele.config \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/almalence_sr_params_wide.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/almalence_sr_params_wide.config \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/beauty_ui9_intelligent_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_ui9_intelligent_params.config \
@@ -36,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/eisoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eisoverridesettings.txt \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/eyelineblush.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eyelineblush.cng \
+    vendor/xiaomi/toco/proprietary/vendor/etc/camera/hdr_ui9_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdr_ui9_params.config \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/lf_facerank_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/lf_facerank_model.bin \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/megviifacepp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megviifacepp_0_5_2_model \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_opencl.bin \
@@ -44,7 +53,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/morpho_lowlight4.0_adrc_high_1_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight4.0_adrc_high_1_algoup.xml \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/morpho_lowlight4.0_adrc_high_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight4.0_adrc_high_algoup.xml \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/morpho_lowlight4.0_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_lowlight4.0_algoup.xml \
+    vendor/xiaomi/toco/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
     vendor/xiaomi/toco/proprietary/vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin \
+    vendor/xiaomi/toco/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/toco/proprietary/vendor/etc/camera/watermark_font_2300_3199.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/watermark_font_2300_3199.dat \
     vendor/xiaomi/toco/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/toco/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/toco/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
@@ -134,6 +146,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
     vendor/xiaomi/toco/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
     vendor/xiaomi/toco/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-external.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.4-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-external-impl.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.5-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-external-impl.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/camera.device@3.6-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/camera/com.qti.sensor.toco_gc02m1_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.toco_gc02m1_macro.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/camera/com.qti.sensor.toco_imx686_wide.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.toco_imx686_wide.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/camera/com.qti.sensor.toco_ov16a10_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.toco_ov16a10_front.so \
@@ -231,7 +252,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libalAILDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalAILDC.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libalRnBRT_GL_GBWRAPPER.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalRnBRT_GL_GBWRAPPER.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libarbitrarybytes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarbitrarybytes.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libarcsat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsat.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libarcsoft_bodyslim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_bodyslim.so \
@@ -246,42 +270,62 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting_c.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libarcsoft_preview_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_preview_deflicker.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libeffects.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffects.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffectsconfig.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libft2vendor.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libhvx_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhvx_interface.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libmialgo_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_fs.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libmialgo_rfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_rfs.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libmibokeh_712.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_712.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libnotifyaudiohal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnotifyaudiohal.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libsdk_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdk_sr.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libultrasound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrasound.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libwebrtc_audio_preprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwebrtc_audio_preprocessing.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/libxmi_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/libxml2_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml2_vendor.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.elliptic.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/sensors.mius.proximity.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.mius.proximity.so \
     vendor/xiaomi/toco/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
-    vendor/xiaomi/toco/proprietary/vendor/lib64/sensors.touch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.so
+    vendor/xiaomi/toco/proprietary/vendor/lib64/sensors.touch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@2.0.so \
+    vendor/xiaomi/toco/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2.so_toco \
