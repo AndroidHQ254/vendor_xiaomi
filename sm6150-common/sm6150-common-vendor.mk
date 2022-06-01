@@ -739,7 +739,6 @@ PRODUCT_PACKAGES += \
     MotoDolbyV3 \
     QtiTelephony \
     QtiTelephonyService \
-    datastatusnotification \
     embms \
     WfdService \
     daxService \
