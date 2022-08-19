@@ -147,7 +147,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_single_chart_calibration \
     libcamera_algoup_jni.xiaomi \
     libcamera_mianode_jni.xiaomi \
-    libcameraservice_micam \
     libdoc_photo \
     libdoc_photo_c++_shared \
     btaudio_offload_if \
@@ -283,7 +282,6 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libft2vendor \
     libgf_hal \
-    libhta_hexagon_runtime \
     libhvx_interface \
     liblearningmodule \
     libfacedet \
