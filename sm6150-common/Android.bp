@@ -449,6 +449,24 @@ cc_prebuilt_library_shared {
 	system_ext_specific: true,
 }
 
+cc_prebuilt_library_shared {
+	name: "vendor.qti.imsrtpservice@3.1_system_ext",
+	stem: "vendor.qti.imsrtpservice@3.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
 android_app_import {
 	name: "CACertService",
 	owner: "xiaomi",
@@ -843,6 +861,13 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.factory-V2.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsconfig-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
@@ -857,9 +882,37 @@ dex_import {
 }
 
 dex_import {
+	name: "vendor.qti.ims.rcssip-V1.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcssip-V1.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "vendor.qti.ims.rcsuce-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsuce-V1.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar"],
 	system_ext_specific: true,
 }
 

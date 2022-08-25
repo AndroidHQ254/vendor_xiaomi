@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm6150-common
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm6150-common/proprietary/system/lib64/libwfdinput.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdinput.so \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
@@ -30,8 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml \
+    vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/xiaomi/sm6150-common/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
@@ -501,9 +500,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libkcl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkcl.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libkernelmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkernelmanager.so \
-    vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
@@ -730,6 +729,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig@2.0_system_ext \
     vendor.qti.ims.rcsconfig@2.1_system_ext \
     vendor.qti.imsrtpservice@3.0_system_ext \
+    vendor.qti.imsrtpservice@3.1_system_ext \
     CACertService \
     CneApp \
     IWlanService \
@@ -776,9 +776,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.factory-V2.0-java \
     vendor.qti.ims.factory-V2.1-java \
+    vendor.qti.ims.factory-V2.2-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
     vendor.qti.ims.rcssip-V1.0-java \
+    vendor.qti.ims.rcssip-V1.1-java \
+    vendor.qti.ims.rcssip-V1.2-java \
     vendor.qti.ims.rcsuce-V1.0-java \
+    vendor.qti.ims.rcsuce-V1.1-java \
+    vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.keymaster@4.1-service-default-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
