@@ -86,6 +86,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libthermalclient",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "btaudio_offload_if",
 	owner: "xiaomi",
 	strip: {
@@ -2796,23 +2816,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libtriplecam_optical_zoom_control",
 	owner: "xiaomi",
 	strip: {
@@ -3058,9 +3061,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "mi_thermald",
+	name: "sensors.qti",
 	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/mi_thermald"],
+	srcs: ["proprietary/vendor/bin/sensors.qti"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -3070,9 +3073,9 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "sensors.qti",
+	name: "thermal-engine",
 	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/sensors.qti"],
+	srcs: ["proprietary/vendor/bin/thermal-engine"],
 	check_elf_files: false,
 	strip: {
 		none: true,
