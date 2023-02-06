@@ -286,6 +286,7 @@ PRODUCT_PACKAGES += \
     libsnsapi \
     libsnsdiaglog \
     libssc \
+    libst_sr_models \
     libswregistrationalgo \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
@@ -298,8 +299,6 @@ PRODUCT_PACKAGES += \
     sensors.mius.proximity \
     sensors.ssc \
     sensors.touch \
-    vendor.qti.hardware.camera.device@2.0 \
-    vendor.qti.hardware.camera.device@3.5 \
     batterysecret \
     cnss-daemon \
     hvdcp_opti \
