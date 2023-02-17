@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_single_chart_calibration \
     libcamera_algoup_jni.xiaomi \
     libcamera_mianode_jni.xiaomi \
+    vendor.xiaomi.hardware.campostproc@1.0 \
     libthermalclient \
     btaudio_offload_if \
     audio.primary.sm6150 \
