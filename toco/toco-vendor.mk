@@ -301,7 +301,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     sensors.touch \
     batterysecret \
-    cnss-daemon \
     hvdcp_opti \
     init.qti.chg_policy \
     sensors.qti \
