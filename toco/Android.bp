@@ -3029,6 +3029,25 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "hvdcp_opti",
+	owner: "xiaomi",
+	srcs: ["proprietary/vendor/bin/hvdcp_opti"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qti.chg_policy",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qti.chg_policy.sh",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "sensors.qti",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/sensors.qti"],
