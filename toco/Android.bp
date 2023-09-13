@@ -3004,6 +3004,12 @@ cc_prebuilt_library_shared {
 }
 
 dex_import {
+	name: "camerax-vendor-extensions",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/camerax-vendor-extensions.jar"],
+}
+
+dex_import {
 	name: "vendor.xiaomi.hardware.misys-V1.0-java",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar"],
