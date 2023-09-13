@@ -722,7 +722,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libMpeg4SwEncoder \
     com.qualcomm.qti.dpm.api@1.0_vendor \
-    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.ims.factory@1.0_vendor \
     vendor.qti.ims.factory@1.1_vendor \
     vendor.qti.ims.rcsconfig@1.0_vendor \
@@ -736,7 +735,6 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.constants@1.0 \
     com.quicinc.cne.constants@2.0 \
     com.quicinc.cne.constants@2.1 \
-    vendor.qti.hardware.fm@1.0_system_ext \
     vendor.qti.ims.factory@1.0_system_ext \
     vendor.qti.ims.factory@1.1_system_ext \
     vendor.qti.ims.factory@2.0_system_ext \
