@@ -755,7 +755,6 @@ PRODUCT_PACKAGES += \
     SoterService \
     TimeService \
     PowerOffAlarm \
-    QtiTelephony \
     QtiTelephonyService \
     DaxUI \
     WfdService \
